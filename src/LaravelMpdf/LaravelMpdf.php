@@ -47,6 +47,8 @@ class LaravelMpdf {
 			'autoScriptToLang' => $this->getConfig('auto_language_detection'), 
 			'autoLangToFont' => $this->getConfig('auto_language_detection'),
 			'tempDir' => ($this->getConfig('temp_dir')) ?: $tempDir,
+			'dpi'				=> $this->getConfig('dpi'),
+            'img_dpi'			=> $this->getConfig('img_dpi'),
 		]);
 
 		$this->mpdf->SetTitle         ( $this->getConfig('title') );

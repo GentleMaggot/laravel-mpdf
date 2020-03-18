@@ -23,4 +23,7 @@ return [
 	'custom_font_data'		=> [],
 	'auto_language_detection'  => false,
 	'temp_dir'				=> ''
+	//Other availiable, uncomment to use
+	//'dpi'                   => 96,
+    //'img_dpi'               => 96,
 ];
