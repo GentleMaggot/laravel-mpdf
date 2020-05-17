@@ -55,6 +55,8 @@ class LaravelMpdf {
 		$this->mpdf->SetAuthor        ( $this->getConfig('author') );
 		$this->mpdf->SetWatermarkText ( $this->getConfig('watermark') );
 		$this->mpdf->SetDisplayMode   ( $this->getConfig('display_mode') );
+		
+		$this->mpdf->img_dpi = $this->getConfig('img_dpi');
 
 		$this->mpdf->showWatermarkText  = $this->getConfig('show_watermark');
 		$this->mpdf->watermark_font     = $this->getConfig('watermark_font');
